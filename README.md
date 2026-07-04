@@ -99,7 +99,7 @@ everything by itself:
 ```text
 Install the Prompt Warrior skill and run it end to end.
 
-Install: git clone [https://github.com/timoncool/prompt-warrior](https://github.com/PetrBachmanov/prompt-warrior-hermes.git) into YOUR OWN
+Install: git clone https://github.com/PetrBachmanov/prompt-warrior-hermes.git into YOUR OWN
 skills directory, named prompt-warrior (for Hermes Agent that is
 ~/hermes/hermes-agent/skills/; other harnesses — wherever your skills live).
 
@@ -112,7 +112,7 @@ recommendations. Don't invent anything beyond the skill.
 
 1. **Clone**
    ```bash
-   git clone [https://github.com/timoncool/prompt-warrior](https://github.com/PetrBachmanov/prompt-warrior-hermes.git) "Paste the path to the skills folder of your Hermes Agent here"
+   git clone https://github.com/PetrBachmanov/prompt-warrior-hermes.git "Paste the path to the skills folder of your Hermes Agent here"
    ```
 
 2. **Ask Hermes Agent**
