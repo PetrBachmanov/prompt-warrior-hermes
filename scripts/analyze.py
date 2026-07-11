@@ -2,13 +2,13 @@
 # -*- coding: utf-8 -*-
 """Prompt Warrior — analyzer (SCALE v1).
 
-Reads Claude Code JSONL session logs, computes fixed-scale communication metrics,
+Reads Hermes Agent SQLite session logs, computes fixed-scale communication metrics,
 derives fun statuses (rank, epithet, title, level, achievements) as flavor on top.
 Stdlib only. Deterministic. RU/EN lexicons.
 
 Usage:
-  python analyze.py                          # all projects, ~/.claude/projects
-  python analyze.py --project D--Projects-X  # one project dir
+  python analyze.py                          # all projects, state.db
+  python analyze.py --project <project_name>  # one project dir
   python analyze.py -o profile.json          # write JSON (default: stdout)
 """
 import argparse
@@ -799,8 +799,8 @@ ACHIEVEMENT_DESCS = {
                      "From frontend to configs: your hand touches everything", "≥ 8 distinct file extensions touched"),
     "puppeteer": ("Внешние серверы пляшут под вашу дудку", "≥ 25% вызовов инструментов — MCP",
                   "External servers dance to your tune", "≥ 25% of tool calls go to MCP"),
-    "update_veteran": ("Видели версии, о которых новички не слышали", "≥ 5 версий Claude Code за период",
-                       "You have seen versions the rookies never heard of", "≥ 5 Claude Code versions in the period"),
+    "update_veteran": ("Видели версии, о которых новички не слышали", "≥ 5 версий Hermes Agent за период",
+                       "You have seen versions the rookies never heard of", "≥ 5 Hermes Agent versions in the period"),
     "branch_weaver": ("Ветки плетутся и вплетаются обратно", "≥ 10 git-веток за период",
                       "Branches woven out and woven back", "≥ 10 git branches in the period"),
     "leviathan": ("Одна сессия — как чужой месяц работы", "≥ 5 млн output-токенов в одной сессии",
@@ -1009,7 +1009,7 @@ def compute_achievements(m, rage):
 
 HARNESS_CLASSES = {
     # класс — от харнесса (источника логов)
-    "claude-code": ("Воин Claude Code", "Claude Code Warrior"),
+    "hermes-agent": ("Воин Hermes Agent", "Hermes Agent Warrior"),
     "codex": ("Легионер Codex", "Codex Legionnaire"),
     "opencode": ("Странник OpenCode", "OpenCode Wanderer"),
     "gemini": ("Апостол Gemini", "Gemini Apostle"),
@@ -1253,7 +1253,7 @@ def append_snapshot(profile):
 
 # ---------------------------------------------------------------- sources
 # Адаптеры харнессов: каждый источник = функция(dir, project) -> messages.
-# Сейчас реализован Claude Code; форматы OpenCode/Codex/Copilot/Gemini — по мере
+# Сейчас реализован Hermes Agent; форматы OpenCode/Codex/Copilot/Gemini — по мере
 # верификации их логов (см. README, Cross-harness).
 
 def collect_hermes(db_path, aux=None):

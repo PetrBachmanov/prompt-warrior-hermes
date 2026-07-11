@@ -4,7 +4,7 @@
 
 # Prompt Warrior (Hermes Edition)
 
-*This is a fork of the original [timoncool/prompt-warrior](https://github.com/timoncool/prompt-warrior) repository, which was originally developed for Claude Code. This edition has been adapted to support Hermes Agent.*
+*This is a fork of the original [timoncool/prompt-warrior](https://github.com/timoncool/prompt-warrior) repository, originally developed for Claude Code. This edition has been fully adapted to support Hermes Agent, with a custom SQLite database connector and all references updated.*
 
 **Your AI agent's logs are hiding a character sheet. We found it.**
 
@@ -28,7 +28,7 @@ Prompt Warrior (Hermes Edition) is an agent skill that reads your local Hermes A
   them — you just haven't been told yet.
 - **You'll finally learn who you are.** Not "a developer" — a *Furious Terminal
   Commander, level 90, "The Iron Fist"*. Class comes from your harness, race from your
-  favorite model: a Claude Code Warrior riding a Mighty Opus.
+  favorite model: a Hermes Agent Warrior riding a Mighty Opus.
 - **The AI writes your chronicle.** A short grimoire-flavored biography composed from
   your actual behavior. It's weirdly accurate and slightly uncomfortable. In a good way.
 - **Numbers nobody else will show you.** Your werewolf index (night profanity vs day),
@@ -93,15 +93,15 @@ button, hover unlock conditions and the achievements accordion:
 
 ## Quick Start
 
-**The lazy way — one message.** Paste this into Claude Code and it installs and runs
+**The lazy way — one message.** Paste this into Hermes Agent and it installs and runs
 everything by itself:
 
 ```text
 Install the Prompt Warrior skill and run it end to end.
 
-Install: git clone https://github.com/timoncool/prompt-warrior into YOUR OWN
-skills directory, named prompt-warrior (for Claude Code that is
-~/.claude/skills/; other harnesses — wherever your skills live).
+Install: git clone https://github.com/PetrBachmanov/prompt-warrior-hermes.git into YOUR OWN
+skills directory, named prompt-warrior (for Hermes Agent that is
+~/hermes/hermes-agent/skills/; other harnesses — wherever your skills live).
 
 Then follow the installed skill's SKILL.md as a regular user: all-time profile,
 HTML card + open it in the browser, inline widget, profile breakdown and
@@ -112,7 +112,7 @@ recommendations. Don't invent anything beyond the skill.
 
 1. **Clone**
    ```bash
-   git clone https://github.com/timoncool/prompt-warrior "Paste the path to the skills folder of your Hermes Agent here"
+   git clone https://github.com/PetrBachmanov/prompt-warrior-hermes.git "Paste the path to the skills folder of your Hermes Agent here"
    ```
 
 2. **Ask Hermes Agent**

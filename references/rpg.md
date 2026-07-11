@@ -9,9 +9,9 @@ Achievements — щепотка, а не ядро продукта (stackoverflo
 ## Identity — класс и раса
 
 Класс — от харнесса, раса — от доминирующей модели (profile.identity, флейвор поверх титула):
-классы: Воин Claude Code · Легионер Codex · Странник OpenCode · Апостол Gemini · Оруженосец Copilot;
+классы: Воин Hermes Agent · Легионер Codex · Странник OpenCode · Апостол Gemini · Оруженосец Copilot;
 расы: Сияющий Фейбл · Могучий Опус · Стремительный Сонет · Лёгкий Хайку · Дитя GPT · Близнец Джемини.
-Подача: строка под титулом — «Воин Claude Code · Могучий Опус (95% реплик)».
+Подача: строка под титулом — «Воин Hermes Agent · Могучий Опус (95% реплик)».
 
 ## Title
 
@@ -117,7 +117,7 @@ tie-break по порядку строк:
 | why_seeker | Философ | The Philosopher | rare | ≥ 20% вопросов — «почему/зачем» |
 | babel_scribe | Вавилонский писарь | Babel Scribe | rare | ≥ 8 разных расширений файлов |
 | puppeteer | Кукловод серверов | Server Puppeteer | rare | ≥ 25% вызовов — MCP |
-| update_veteran | Ветеран обновлений | Update Veteran | common | ≥ 5 версий Claude Code за период |
+| update_veteran | Ветеран обновлений | Update Veteran | common | ≥ 5 версий Hermes Agent за период |
 | branch_weaver | Ткач ветвей | Branch Weaver | rare | ≥ 10 git-веток за период |
 | leviathan | Сессия-левиафан | Leviathan Session | epic | ≥ 5 млн output-токенов в одной сессии |
 | gutenberg | Гутенберг | Gutenberg | legendary | ≥ 25 млн токенов (лестница над «Печатным станком») |

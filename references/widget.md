@@ -63,7 +63,7 @@
 | ответов модели — с thinking-блоками | of replies carry thinking blocks |
 | достижений открыто | achievements unlocked |
 | Конюшня — ответы по моделям | The stable — replies by model |
-| Сетап · вход в Claude Code · план-режим · версий Claude Code за период · самая дорогая сессия | Setup · Claude Code entrypoint · plan mode · Claude Code versions in period · most expensive session |
+|| Сетап · вход в Hermes Agent · план-режим · версий Hermes Agent за период · самая дорогая сессия | Setup · Hermes Agent entrypoint · plan mode · Hermes Agent versions in period · most expensive session |
 | Словарь воина | Warrior's vocabulary |
 | Достижения · условие: | Achievements · unlock: |
 | Показать все достижения — ещё N (rare и common) | Show all achievements — N more (rare & common) |

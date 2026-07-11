@@ -1,12 +1,12 @@
 ---
 name: prompt-warrior
-description: Use when the user wants to analyze their communication style with AI from Claude Code logs — asks for a "prompt warrior" profile, an "AI profile", "wrapped", a psychological portrait of how they prompt, statistics of their sessions/messages, or personalized prompt-engineering recommendations based on their chat history. Works in any language (RU/EN lexicons built in).
+description: Use when the user wants to analyze their communication style with AI from Hermes Agent logs — asks for a "prompt warrior" profile, an "AI profile", "wrapped", a psychological portrait of how they prompt, statistics of their sessions/messages, or personalized prompt-engineering recommendations based on their chat history. Works in any language (RU/EN lexicons built in).
 ---
 
 # Prompt Warrior
 
 Builds a gamified analytical portrait of the user's AI collaboration style from their
-local Claude Code JSONL logs: real metrics on a FIXED scale (comparable between people)
+local Hermes Agent SQLite logs: real metrics on a FIXED scale (comparable between people)
 plus fun statuses — a title, a level, achievements with rarity — and evidence-based
 prompt-engineering recommendations. It is NOT an RPG character sheet:
 no classes, no stat blocks; the analytics are the product, the statuses are the garnish.
