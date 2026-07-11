@@ -6,6 +6,17 @@
 
 *This is a fork of the original [timoncool/prompt-warrior](https://github.com/timoncool/prompt-warrior) repository, originally developed for Claude Code. This edition has been fully adapted to support Hermes Agent, with a custom SQLite database connector and all references updated.*
 
+**v0.2**
+
+ Fixed:
+- Fixed avatar generation
+- Cleaned up comments and dependencies on "Claude Code"
+
+Known problems:
+- "Working style - role calls" incorrectly interprets Hermes tools, will be corrected in a future version
+- "Files in progress - top extensions" does not detect file extensions, will be fixed in a future version
+
+
 **Your AI agent's logs are hiding a character sheet. We found it.**
 
 [![License](https://img.shields.io/github/license/timoncool/prompt-warrior?style=flat-square)](LICENSE)
